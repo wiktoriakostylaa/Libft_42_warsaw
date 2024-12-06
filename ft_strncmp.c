@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/03 13:46:05 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/06 11:56:46 by wkostyla         ###   ########.fr       */
+/*   Created: 2024/12/06 14:43:30 by wkostyla          #+#    #+#             */
+/*   Updated: 2024/12/06 15:01:26 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
-}
+	size_t	i;
 
-/*int main()
-{
-	if (ft_isalpha('1'))
+	i = 0;
+	while ((s1[i] || s2[i]) && i < n)
 	{
-		printf("is alpha");
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] - s2[i]);
+		}
+		i++;
 	}
-	else{
-		printf("is not alpha");
-	}
-}*/
+	return (0);
+}

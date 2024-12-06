@@ -6,9 +6,11 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:07:32 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/03 16:10:53 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/06 11:58:01 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

@@ -6,11 +6,11 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:41:07 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/03 16:11:18 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/06 11:57:29 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

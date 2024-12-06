@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/03 13:46:05 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/06 11:56:46 by wkostyla         ###   ########.fr       */
+/*   Created: 2024/12/06 14:13:48 by wkostyla          #+#    #+#             */
+/*   Updated: 2024/12/06 14:22:39 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
-}
+	int	i;
 
-/*int main()
-{
-	if (ft_isalpha('1'))
+	i = 0;
+	while (s[i])
+		i++;
+	while (i >= 0)
 	{
-		printf("is alpha");
+		if (s[i] == (char)c)
+		{
+			return ((char *)(s + i));
+		}
+		i--;
 	}
-	else{
-		printf("is not alpha");
-	}
-}*/
+	return (NULL);
+}
