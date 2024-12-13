@@ -6,7 +6,7 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 17:12:05 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/07 17:40:16 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/13 16:31:52 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
-	int		i;
-	int		j;
+	size_t	i;
+	size_t	j;
 
 	substr = (char *)malloc(sizeof(char) * (len + 1));
 	i = 0;

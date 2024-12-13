@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: osboxes <osboxes@student.42.fr>            +#+  +:+       +#+         #
+#    By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/07 18:27:28 by wkostyla          #+#    #+#              #
-#    Updated: 2024/12/12 13:25:35 by osboxes          ###   ########.fr        #
+#    Updated: 2024/12/13 16:36:19 by wkostyla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,27 +16,29 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 		ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c \
 		ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 		ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c \
-		ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c
+		ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
+		ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
+		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
-OBJS = ${SRCS:.c = .o}
+OBJS = ${SRCS:.c=.o}
 CC = gcc
-RM = rm -f
+RM = rm -f 
 NAME = libft.a 
 LIBC = ar rcs
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	@ar rcs $(NAME) $(OBJ)
+$(NAME): $(OBJS)
+	$(LIBC) $(NAME) $(OBJS)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+.c.o:
+	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
 clean:
-	@rm -f $(OBJ)
+	$(RM)$(OBJS)
 
 fclean: clean
-	@rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
