@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+         #
+#    By: osboxes <osboxes@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/07 18:27:28 by wkostyla          #+#    #+#              #
-#    Updated: 2024/12/08 16:58:56 by wkostyla         ###   ########.fr        #
+#    Updated: 2024/12/12 13:25:35 by osboxes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 		ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c \
 		ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 		ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c \
-		ft_strjoin.c ft_strtrim.c ft_split.c
+		ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c
 
 OBJS = ${SRCS:.c = .o}
 CC = gcc
