@@ -6,7 +6,7 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 16:43:33 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/07 17:40:43 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/14 17:20:28 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,18 @@ char	*ft_strdup(const char *s)
 {
 	size_t	size;
 	char	*dup;
+	size_t	i;
 
 	size = ft_strlen(s);
 	dup = (char *)malloc(size * sizeof(char) + 1);
 	if (dup == NULL)
 		return (NULL);
+	i = 0;
+	while (i < size)
+	{
+		dup[i] = s[i];
+		i++;
+	}
 	dup[size] = '\0';
 	return (dup);
 }

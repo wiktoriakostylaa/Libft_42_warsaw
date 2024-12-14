@@ -6,57 +6,62 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 13:33:14 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/13 13:33:23 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/14 19:22:46 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_num_len(int n)
+static char	*ft_char(char *atoi, unsigned int num, long int len)
 {
-	int	i;
+	while (num > 0)
+	{
+		atoi[len--] = (num % 10) + '0';
+		num = num / 10;
+	}
+	return (atoi);
+}
 
-	i = 0;
+static long int	ft_len(int n)
+{
+	int	len;
+
+	len = 0;
 	if (n <= 0)
+		len = 1;
+	while (n != 0)
 	{
-		i = 1;
-		n *= (-1);
+		len++;
+		n = n / 10;
 	}
-	while (n > 0)
-	{
-		i++;
-		n /= 10;
-	}
-	return (i);
+	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	char	*itoa;
-	int		len;
+	char			*atoi;
+	long int		len;
+	unsigned int	num;
+	int				sign;
 
-	len = ft_num_len(n);
-	itoa = (char *)malloc(sizeof(char) * (len + 1));
-	if (!itoa)
+	sign = 1;
+	len = ft_len(n);
+	atoi = (char *)malloc(sizeof(char) * (len + 1));
+	if (!(atoi))
 		return (NULL);
-	itoa[len] = '\0';
+	atoi[len--] = '\0';
 	if (n == 0)
-	{
-		itoa[0] = '0';
-		return (itoa);
-	}
+		atoi[0] = '0';
 	if (n < 0)
 	{
-		itoa[0] = '-';
-		n *= -1;
+		sign *= -1;
+		num = n * -1;
+		atoi[0] = '-';
 	}
-	while (n > 0)
-	{
-		len--;
-		itoa[len] = (n % 10) + '0';
-		n /= 10;
-	}
-	return (itoa);
+	else
+		num = n;
+	atoi = ft_char(atoi, num, len);
+	return (atoi);
 }
 
 /*int main()

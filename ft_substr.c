@@ -6,31 +6,45 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 17:12:05 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/13 16:31:52 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/14 17:58:12 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char	*handle_empty_substr_case(void)
+{
+	char	*substr;
+
+	substr = (char *)malloc(sizeof(char));
+	if (substr == NULL)
+		return (NULL);
+	substr[0] = '\0';
+	return (substr);
+}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
 	size_t	i;
 	size_t	j;
+	size_t	str_len;
 
+	str_len = ft_strlen(s);
+	if (start >= str_len)
+		return (handle_empty_substr_case());
+	if (len > str_len - start)
+		len = str_len - start;
 	substr = (char *)malloc(sizeof(char) * (len + 1));
-	i = 0;
-	j = 0;
 	if (substr == NULL)
 		return (NULL);
-	while (s[i] != '\0')
+	i = start;
+	j = 0;
+	while (s[i] != '\0' && j < len)
 	{
-		if (i >= start && j < len)
-		{
-			substr[j] = s[i];
-			j++;
-		}
+		substr[j] = s[i];
 		i++;
+		j++;
 	}
 	substr[j] = '\0';
 	return (substr);

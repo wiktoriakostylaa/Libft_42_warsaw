@@ -6,7 +6,7 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 15:33:45 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/06 17:23:11 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/14 16:26:38 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (!little || !big)
-		return (NULL);
-	if (!little)
+	if (little[0] == '\0')
 		return ((char *)big);
 	while (big[i] && i < len)
 	{

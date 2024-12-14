@@ -6,7 +6,7 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 14:55:15 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/13 16:47:55 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/14 18:35:03 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,21 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*itoa;
-	int		i;
+	long	nb;
 
-	itoa = ft_itoa(n);
-	i = 0;
-	while (itoa[i] != '\0')
+	nb = n;
+	if (nb < 0)
 	{
-		write(fd, &itoa[i], 1);
-		i++;
+		write(fd, "-", 1);
+		nb *= -1;
 	}
+	if (nb > 9)
+	{
+		ft_putnbr_fd(nb / 10, fd);
+		ft_putchar_fd((nb % 10) + '0', fd);
+	}
+	else
+		ft_putchar_fd(nb + '0', fd);
 }
 
 /*int main(void)

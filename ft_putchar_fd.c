@@ -6,13 +6,11 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 14:19:04 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/13 14:32:15 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/14 15:48:11 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//#include <fcntl.h>
 
 void	ft_putchar_fd(char c, int fd)
 {

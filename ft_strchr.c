@@ -6,7 +6,7 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 13:48:33 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/06 14:12:31 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/14 16:10:11 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,7 @@ char	*ft_strchr(const char *s, int c)
 		}
 		i++;
 	}
+	if (c == '\0')
+		return ((char *)(s + i));
 	return (NULL);
 }

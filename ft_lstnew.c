@@ -1,34 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/03 17:08:16 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 16:13:21 by wkostyla         ###   ########.fr       */
+/*   Created: 2024/12/14 15:37:43 by wkostyla          #+#    #+#             */
+/*   Updated: 2024/12/14 15:39:25 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+t_list *ft_lstnew(void *content)
 {
-	size_t	i;
-
-	i = 0;
-	if (size > 0)
-	{
-		while (src[i] && i < (size - 1))
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	while (src[i])
-	{
-		i++;
-	}
-	return (i);
+    
 }

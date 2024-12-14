@@ -6,7 +6,7 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 16:10:59 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/07 16:42:51 by wkostyla         ###   ########.fr       */
+/*   Updated: 2024/12/14 17:59:52 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*ptr;
 
 	ptr = (void *)malloc(nmemb * size);
-	if (ptr == NULL)
+	if (!ptr)
 		return (NULL);
 	ft_bzero(ptr, (nmemb * size));
 	return (ptr);
