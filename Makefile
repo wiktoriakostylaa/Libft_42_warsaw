@@ -6,7 +6,7 @@
 #    By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/07 18:27:28 by wkostyla          #+#    #+#              #
-#    Updated: 2024/12/14 15:49:55 by wkostyla         ###   ########.fr        #
+#    Updated: 2024/12/21 17:01:37 by wkostyla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,14 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 		ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
 		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
-OBJS = ${SRCS:.c=.o}
+OBJS = $(SRCS:.c=.o)
+
+BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
+		ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
+		ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+BONUS_OBJS = $(BONUS:.c=.o)
+
 CC = gcc
 RM = rm -f 
 NAME = libft.a 
@@ -35,10 +42,13 @@ $(NAME): $(OBJS)
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
+bonus: $(NAME) $(BONUS_OBJS)
+		$(LIBC) $(NAME) $(BONUS_OBJS)
+
 clean:
-	$(RM)$(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) $(bonus)
 
 re: fclean all
