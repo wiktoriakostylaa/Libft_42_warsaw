@@ -6,9 +6,14 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 16:43:33 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 17:20:28 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:12:11 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_strdup tworzy kopię łańcucha znaków s, alokując odpowiednią ilość
+** pamięci i kopiując zawartość s do nowo utworzonego łańcucha.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,13 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:41:07 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/06 11:57:29 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:08:04 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_memset ustawia n bajtów w pamięci wskazanej przez s na wartość c.
+*/
 
 #include "libft.h"
 

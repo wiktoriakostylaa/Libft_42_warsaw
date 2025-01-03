@@ -6,17 +6,28 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 16:10:59 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/21 14:35:58 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 13:51:56 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Funkcja ft_calloc alokuje pamięć dla tablicy złożonej z nmemb elementów, 
+z których każdy ma rozmiar size, i zeruje przydzieloną pamięć.
+*/
 
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
+	size_t	total;
 
-	ptr = (void *)malloc(nmemb * size);
+	if (nmemb == 0 || size == 0)
+		return (malloc(0));
+	total = nmemb * size;
+	if (total / nmemb != size)
+		return (NULL);
+	ptr = (void *)malloc(total);
 	if (!ptr)
 		return (NULL);
 	ft_bzero(ptr, (nmemb * size));

@@ -6,9 +6,14 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 15:04:19 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 15:58:31 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:04:16 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_memchr przeszukuje pierwsze n bajtów pamięci wskazanej przez s
+** w poszukiwaniu pierwszego wystąpienia znaku c.
+*/
 
 #include "libft.h"
 

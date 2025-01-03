@@ -6,9 +6,16 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 15:24:07 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/21 17:12:27 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:20:58 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_lstclear usuwa wszystkie elementy 
+listy jednokierunkowej 
+** i zwalnia ich pamięć, używając podanej 
+funkcji del do zwolnienia zawartości (content).
+*/
 
 #include "libft.h"
 

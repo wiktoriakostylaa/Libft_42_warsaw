@@ -6,9 +6,16 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 15:23:38 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 16:02:03 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:23:47 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_memcmp porównuje pierwsze n bajtów pamięci 
+wskazanych przez s1 i s2.
+** Zwraca różnicę między pierwszymi różnymi bajtami, lub 0, jeśli bloków pamięci
+** są identyczne przez n bajtów.
+*/
 
 #include "libft.h"
 

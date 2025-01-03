@@ -6,9 +6,18 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 15:33:45 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 16:26:38 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:25:20 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_strnstr wyszukuje pierwsze wystąpienie łańcucha 
+little w łańcuchu big,
+** które mieści się w limicie określonym przez len.
+** Funkcja przeszukuje maksymalnie len znaków z big i zwraca wskaźnik na początek
+** znalezionego wystąpienia little lub NULL, jeśli little 
+nie zostanie znalezione.
+*/
 
 #include "libft.h"
 

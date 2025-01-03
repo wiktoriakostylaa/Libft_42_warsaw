@@ -6,9 +6,15 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 17:41:19 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 18:04:43 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:23:35 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_strjoin łączy dwa łańcuchy znaków s1 i s2 w jeden nowy łańcuch.
+** Alokuje pamięć na nowy łańcuch, kopiuje zawartość s1, 
+a następnie zawartość s2.
+*/
 
 #include "libft.h"
 

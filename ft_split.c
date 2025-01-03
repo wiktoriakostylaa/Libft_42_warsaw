@@ -6,9 +6,21 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 16:58:11 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/10 17:15:50 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/03 14:27:16 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_split dzieli łańcuch znaków s na tablicę łańcuchów, rozdzielając go
+** na słowa, używając znaku c jako separatora.
+**
+** Pomocnicze funkcje:
+** - ft_count_words: Liczy liczbę słów w łańcuchu s, rozdzielonych znakiem c.
+** - ft_word_len: Oblicza długość jednego słowa w łańcuchu s.
+** - ft_allocate: Alokuje pamięć i kopiuje słowo z łańcucha s 
+od indeksu start do end.
+** - ft_free: Zwalnia pamięć zaalokowaną dla tablicy wynikowej w przypadku błędu.
+*/
 
 #include "libft.h"
 
@@ -101,7 +113,7 @@ char	**ft_split(char const *s, char c)
 			while (s[++i] == c)
 				;
 	}
-	split[j] = '\0';
+	split[j] = NULL;
 	return (split);
 }
 

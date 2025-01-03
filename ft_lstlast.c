@@ -6,9 +6,13 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 14:42:42 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/21 15:08:40 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:01:45 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_lstlast zwraca ostatni element listy jednokierunkowej.
+*/
 
 #include "libft.h"
 

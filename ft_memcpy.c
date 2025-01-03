@@ -6,9 +6,14 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 16:16:21 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/06 11:57:12 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:05:49 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_memcpy kopiuje n bajtów z pamięci źródłowej (src) 
+** do pamięci docelowej (dest).
+*/
 
 #include "libft.h"
 

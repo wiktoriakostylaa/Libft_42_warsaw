@@ -6,9 +6,17 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 17:05:11 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 16:54:49 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 13:50:07 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Funkcja ft_atoi konwertuje początkową część łańcucha znaków 
+wskazanego przez nptr na liczbę całkowitą (int).
+Pomija początkowe białe znaki, 
+obsługuje opcjonalny znak '+' lub '-' oraz przetwarza cyfry 
+aż do napotkania niecyfry.
+*/
 
 #include "libft.h"
 

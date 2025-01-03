@@ -6,9 +6,16 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 13:36:12 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/13 14:00:02 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:21:18 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_strmapi tworzy nowy łańcuch znaków, 
+który jest wynikiem zastosowania funkcji f
+** do każdego znaku w łańcuchu s, gdzie funkcja 
+f przyjmuje indeks i znak z s.
+*/
 
 #include "libft.h"
 

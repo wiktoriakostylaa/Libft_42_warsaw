@@ -6,9 +6,19 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 13:33:14 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 19:22:46 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:22:49 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Funkcja ft_itoa konwertuje liczbę całkowitą n na reprezentację w postaci 
+łańcucha znaków (string).
+
+Funkcje pomocnicze:
+- ft_char: Przekształca liczby na znaki i zapisuje je w łańcuchu.
+- ft_len: Oblicza długość łańcucha wymaganego do zapisania liczby, 
+uwzględniając znak.
+*/
 
 #include "libft.h"
 

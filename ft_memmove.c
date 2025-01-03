@@ -6,9 +6,17 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 16:17:46 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/06 11:57:21 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:20:38 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_memmove kopiuje n bajtów z pamięci 
+źródłowej (src) do pamięci docelowej (dest),
+** obsługując przypadek nakładających się obszarów pamięci.
+** Jeśli obszary pamięci nakładają się,
+** kopiuje dane od końca, aby uniknąć nadpisania danych.
+*/
 
 #include "libft.h"
 

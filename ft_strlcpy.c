@@ -6,9 +6,15 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 17:08:16 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 16:13:21 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:25:49 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_strlcpy kopiuje do dst maksymalnie size-1 znaków z łańcucha src,
+** a następnie dodaje znak null ('\0') na końcu. 
+Zwraca całkowitą długość łańcucha src.
+*/
 
 #include "libft.h"
 

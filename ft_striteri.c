@@ -6,9 +6,14 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 14:00:56 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/13 14:18:17 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:12:55 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_striteri stosuje funkcję f do każdego znaku łańcucha s, przekazując
+** indeks oraz wskaźnik na każdy znak w łańcuchu.
+*/
 
 #include "libft.h"
 

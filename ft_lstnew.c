@@ -6,9 +6,14 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 15:37:43 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/21 14:57:28 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:03:26 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_lstnew tworzy nowy element listy jednokierunkowej, inicjując
+** jego zawartość (content) i ustawiając wskaźnik next na NULL.
+*/
 
 #include "libft.h"
 

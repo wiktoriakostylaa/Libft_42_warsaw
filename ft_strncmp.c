@@ -6,9 +6,19 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 14:43:30 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/06 15:01:26 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:25:02 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_strncmp porównuje dwa łańcuchy znaków s1 i s2 
+przez maksymalnie n znaków.
+** Jeśli łańcuchy różnią się, funkcja zwraca różnicę między 
+pierwszymi różnymi znakami.
+** Jeśli łańcuchy są równe przez n znaków lub do momentu 
+napotkania znaku null ('\0'),
+** funkcja zwraca 0.
+*/
 
 #include "libft.h"
 

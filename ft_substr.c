@@ -6,9 +6,18 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 17:12:05 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 17:58:12 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:21:50 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_substr zwraca nowy łańcuch,
+	który jest wyodrębnionym fragmentem z łańcucha s,
+** zaczynając od indeksu start i o długości len. 
+Jeśli start jest poza zakresem łańcucha,
+** zwraca pusty łańcuch. Jeśli przydzielenie pamięci nie powiedzie się,
+	funkcja zwraca NULL.
+*/
 
 #include "libft.h"
 

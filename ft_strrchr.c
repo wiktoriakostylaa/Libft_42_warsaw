@@ -6,9 +6,17 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 14:13:48 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/06 14:22:39 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:22:09 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_strrchr wyszukuje ostatnie wystąpienie znaku c 
+w łańcuchu s.
+** Jeśli znak c zostanie znaleziony, funkcja zwraca wskaźnik 
+na jego ostatnią pozycję w łańcuchu.
+** Jeśli znak c nie zostanie znaleziony, funkcja zwraca NULL.
+*/
 
 #include "libft.h"
 

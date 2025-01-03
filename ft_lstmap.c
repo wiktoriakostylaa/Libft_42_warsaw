@@ -6,9 +6,17 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 17:00:33 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/21 17:17:56 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:24:11 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_lstmap tworzy nową listę, stosując funkcję f 
+do zawartości (content) 
+** każdego elementu oryginalnej listy. Jeśli wystąpi błąd, 
+usuwa wszystkie elementy
+** nowej listy za pomocą funkcji del.
+*/
 
 #include "libft.h"
 
@@ -19,7 +27,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	if (!lst || !f)
 		return (NULL);
-    new = NULL;
+	new = NULL;
 	while (lst)
 	{
 		node = ft_lstnew(f(lst->content));

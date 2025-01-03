@@ -6,9 +6,14 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 12:02:51 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/14 16:21:30 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:14:21 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_strlcat łączy łańcuchy znaków dst i src, zachowując ograniczenie
+** rozmiaru (size), aby zapobiec przekroczeniu dostępnej pamięci w dst.
+*/
 
 #include "libft.h"
 

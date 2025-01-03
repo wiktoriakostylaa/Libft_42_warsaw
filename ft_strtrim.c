@@ -6,9 +6,16 @@
 /*   By: wkostyla <wkostyla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 19:28:16 by wkostyla          #+#    #+#             */
-/*   Updated: 2024/12/08 16:56:53 by wkostyla         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:23:12 by wkostyla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Funkcja ft_strtrim usuwa znaki z początku i końca łańcucha s1, 
+które znajdują się w zbiorze set.
+** Zwraca nowy łańcuch, w którym nie ma znaków z set na początku i końcu s1.
+** Jeśli nie uda się przydzielić pamięci, funkcja zwraca NULL.
+*/
 
 #include "libft.h"
 
